@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Pagination = ({ activePage }) => {
+const Pagination = ({ activePage, changeActivePage }) => {
 
   const pages = [1, 2, 3];
 
@@ -10,8 +10,8 @@ const Pagination = ({ activePage }) => {
         { pages.map((page, index) => {
             const className = page === activePage ? 'page-item active' : 'page-item';
             return (
-              <li key={index} className={className}>
-                <a className="page-link">{page}</a> 
+              <li key={index} className={className} onClick={() => changeActivePage(page)}>
+                <a className="page-link">{page}</a>
               </li>
             );
           })

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Users.css';
-import { Spinner, Pagination } from '../../components';
-import UserList from './UserList';
+import { Spinner, UserList, Pagination } from '../../components';
 
 class Users extends Component {
 
@@ -56,11 +55,17 @@ class Users extends Component {
     return (
       <React.Fragment>
         <UserList users={users} />
-        <Pagination activePage={pageNumber} />
+        <Pagination activePage={pageNumber} changeActivePage={this.changeActivePage} />
       </React.Fragment>
     );
   };
 
+  changeActivePage = (pageNumber) => {
+    this.setState({
+      pageNumber,
+      isFetching: true
+    }, () => this.fetchUsers());
+  }
 
   /**
    * Render spinner while data is fetching.
