@@ -3,7 +3,7 @@ import UserItem from './UserItem';
 
 const UserList = ({ users }) => {
   return (
-    <ul class="list-group">
+    <ul className="list-group">
       { users.map((user) => <UserItem key={user.email} user={user} />) }
     </ul>
   );

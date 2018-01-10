@@ -7,11 +7,11 @@ const Pagination = ({ activePage }) => {
   return (
     <nav style={container}>
       <ul className="pagination">
-        { pages.map((page) => {
+        { pages.map((page, index) => {
             const className = page === activePage ? 'page-item active' : 'page-item';
             return (
-              <li className={className}>
-                <a className="page-link">{page}</a>
+              <li key={index} className={className}>
+                <a className="page-link">{page}</a> 
               </li>
             );
           })

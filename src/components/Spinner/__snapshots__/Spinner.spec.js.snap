@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner should render spinner  1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "fontSize": 30,
+      "fontWight": "bold",
+      "justifyContent": "center",
+      "marginTop": 50,
+    }
+  }
+>
+  Loading....
+</div>
+`;

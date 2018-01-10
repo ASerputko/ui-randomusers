@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination should render pagination where first page is active 1`] = `
+<nav
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginTop": 10,
+    }
+  }
+>
+  <ul
+    className="pagination"
+  >
+    <li
+      className="page-item active"
+    >
+      <a
+        className="page-link"
+      >
+        1
+      </a>
+    </li>
+    <li
+      className="page-item"
+    >
+      <a
+        className="page-link"
+      >
+        2
+      </a>
+    </li>
+    <li
+      className="page-item"
+    >
+      <a
+        className="page-link"
+      >
+        3
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Pagination should render pagination where second page is active 1`] = `
+<nav
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginTop": 10,
+    }
+  }
+>
+  <ul
+    className="pagination"
+  >
+    <li
+      className="page-item"
+    >
+      <a
+        className="page-link"
+      >
+        1
+      </a>
+    </li>
+    <li
+      className="page-item active"
+    >
+      <a
+        className="page-link"
+      >
+        2
+      </a>
+    </li>
+    <li
+      className="page-item"
+    >
+      <a
+        className="page-link"
+      >
+        3
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Pagination should render pagination where third page is active 1`] = `
+<nav
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginTop": 10,
+    }
+  }
+>
+  <ul
+    className="pagination"
+  >
+    <li
+      className="page-item"
+    >
+      <a
+        className="page-link"
+      >
+        1
+      </a>
+    </li>
+    <li
+      className="page-item"
+    >
+      <a
+        className="page-link"
+      >
+        2
+      </a>
+    </li>
+    <li
+      className="page-item active"
+    >
+      <a
+        className="page-link"
+      >
+        3
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
