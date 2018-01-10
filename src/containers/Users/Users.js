@@ -37,29 +37,6 @@ class Users extends Component {
       });
   };
 
-  /**
-   * Render spinner.
-   */
-  renderSpiner = () => {
-    return (
-      <Spinner />
-    );
-  };
-
-  /**
-   * Render users and pagination.
-   */
-  renderUsers = () => {
-    const { users, pageNumber } = this.state;
-
-    return (
-      <React.Fragment>
-        <UserList users={users} />
-        <Pagination activePage={pageNumber} changeActivePage={this.changeActivePage} />
-      </React.Fragment>
-    );
-  };
-
   changeActivePage = (pageNumber) => {
     this.setState({
       pageNumber,
@@ -72,11 +49,13 @@ class Users extends Component {
    * Render user list and pagination.
    */
   render() {
-    const { isFetching } = this.state;
+    const { isFetching, users, pageNumber } = this.state;
 
     return (
-      <div className="container">
-        { isFetching ? this.renderSpiner() : this.renderUsers() }
+      <div className="container user-container">
+        { isFetching ? <Spinner /> : <React.Fragment /> }
+        <UserList users={users} />
+        { users.length ? <Pagination activePage={pageNumber} changeActivePage={this.changeActivePage} /> : <React.Fragment /> }
       </div>
     );
   };

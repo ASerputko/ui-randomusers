@@ -11,12 +11,11 @@ const Spinner = () => {
 
 const styles = {
   container: {
-    marginTop: 50,
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    fontSize: 30,
+    fontSize: 20,
     fontWight: 'bold'
   }
 };

@@ -7,10 +7,9 @@ exports[`Spinner should render spinner  1`] = `
       "alignItems": "center",
       "display": "flex",
       "flexDirection": "row",
-      "fontSize": 30,
+      "fontSize": 20,
       "fontWight": "bold",
       "justifyContent": "center",
-      "marginTop": 50,
     }
   }
 >
